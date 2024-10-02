@@ -1,0 +1,22 @@
+.partner {
+}
+.partner-container {
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+.partner-item {
+    width: 100%;
+    aspect-ratio: 17 / 11;
+    background: #F3F7FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.partner-item img {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+    mix-blend-mode: darken;
+}

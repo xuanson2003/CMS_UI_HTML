@@ -1,0 +1,124 @@
+.nav-bar {
+    height: 56px;
+    background-color: #193963;
+    position: sticky;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.5s ease;
+}
+
+.sticky {
+    top: 0;
+}
+
+.nav-item,
+.nav-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--color-white);
+    transition: width 0.3s ease;
+    border-radius: 1px;
+}
+
+.nav-item-sub {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 280px;
+    background-color: var(--color-white);
+    padding: 12px 12px;
+    border-radius: 6px;
+    box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.1), 
+    0 3px 6px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    animation: slideUp 0.5s ease forwards; 
+}
+
+.nav-item-sub::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 280px;
+    height: 20px;
+}
+
+.nav-item:hover > .nav-item-sub {
+    display: block;
+}
+
+.nav-item-sub li a {
+    width: 100%;
+    height: 100%;
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    display: block;
+    padding: 6px 8px;
+    line-height: 1.5;
+}
+.nav-item-sub li a:hover {
+    color: var(--color-secondary)
+}
+.nav-item-sub hr {
+    border: 1px solid #d9d9d9;
+    opacity: .3;
+    margin: 6px 0;
+}
+
+/* search */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    transition: width 0.3s ease, right 0.3s ease;
+    opacity: 1;
+    right: 8px; 
+    position: absolute;
+    outline: none;
+    border: none;
+}
+
+.search-icon {
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 2;
+    margin-top: -3px;
+}
+
+.search-container:hover .search-input {
+    width: 280px; 
+    opacity: 1;
+    padding: 0 20px;
+    right: -11px; 
+}
+
+.search-container:hover .search-icon {
+    opacity: 0.5;
+}

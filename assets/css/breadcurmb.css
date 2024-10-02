@@ -1,0 +1,13 @@
+.bread-crumb {
+    background-color: #F3F7FA;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.bread-crumb p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #757F95;
+}
