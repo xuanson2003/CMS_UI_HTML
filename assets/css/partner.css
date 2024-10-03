@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 2px;
+    transition: .2s ease;
 }
 
 .partner-item img {
@@ -19,4 +20,8 @@
     max-width: 90%;
     object-fit: cover;
     mix-blend-mode: darken;
+}
+
+.partner-item:hover {
+    transform: translateY(-6px);
 }
