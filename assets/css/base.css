@@ -113,6 +113,11 @@ button {
     display: none;
 }
 
+.back-to-top img {
+    margin-top: -2px;
+    margin-right: -2px;
+}
+
 .btn-message {
     bottom: 128px;
     width: 60px;

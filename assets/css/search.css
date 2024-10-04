@@ -50,7 +50,6 @@
 .search-option {
     height: 100%;
     width: 146px;
-    padding: 0 8px;
     background-color: var(--color-background);
     border-radius: 100px;
     background-color: var(--color-primary);
@@ -66,7 +65,7 @@
 .select-menu .select-btn {
     display: flex;
     height: 100%;
-    padding: 20px 8px 20px 16px;
+    padding: 20px 16px 20px 16px;
     font-size: 15px;
     font-weight: 400;
     border-radius: 6px;
