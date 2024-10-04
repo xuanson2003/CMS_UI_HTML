@@ -78,7 +78,7 @@
 
 /* style 1 */
 .slide-item.style-1 {
-    background: url('../image/background-slide-style1.jpg') no-repeat;
+    background: url('../image/background-slide-light-blue.webp') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -118,7 +118,7 @@
 
 /* style 2 */
 .slide-item.style-2 {
-    background: url('../image/background-slide-style2.png') no-repeat;
+    background: url('https://shutterstock.com/image-vector/banner-background-colorful-bright-green-260nw-2332740553.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }

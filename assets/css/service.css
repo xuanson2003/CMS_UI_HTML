@@ -48,6 +48,9 @@
 .service-item:hover {
     background-color: var(--color-text-light) !important;
 }
+.service-item:hover p {
+    color: var(--color-secondary);
+}
 
 .service-slide-control {
     display: flex;
