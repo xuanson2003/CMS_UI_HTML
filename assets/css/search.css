@@ -1,8 +1,129 @@
 .search {
     width: 100%;
-    background: url('../image/background-search.png');
+    background: url('../image/backgroun-search-2.png');
     background-size: cover;
-    padding-top: 46px;
-    padding-bottom: 46px;
+    padding: 64px 0;
 }
 
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search .form-input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: var(--color-white);
+    width: 760px;
+    height: 60px;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.form-input-group input {
+    border: none;
+    flex: 1;
+    height: 100%;
+    padding: 0 16px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-input-group button {
+    width: auto;
+    padding: 4px 16px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+/* select */
+.search-option {
+    height: 100%;
+    width: 140px;
+    border-right: 1px solid #ccc;
+    padding-right: 8px;
+    background-color: var(--color-background);
+    border-radius: 6px 0 0 6px;
+}
+
+.select-menu {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.select-menu .select-btn {
+    display: flex;
+    height: 100%;
+    padding: 20px 8px 20px 16px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.select-btn i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.select-menu .options {
+    position: relative;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out;
+    max-height: 0;
+    z-index: 99;
+    animation: slideUp 0.5s ease forwards; 
+    width: 140px;
+}
+
+.select-menu .options::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: -15px;
+    left: 0;
+}
+
+.select-menu.active .options {
+    display: block;
+    opacity: 1;
+    max-height: 300px;
+}
+
+.options .option {
+    display: flex;
+    height: 42px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+
+.options .option:hover {
+    background: #f2f2f2;
+}
+
+.option .option-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}

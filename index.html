@@ -357,15 +357,31 @@
             </section>
 
             <section class="search">
-                <form class="container">
-                    <h2 class="text-primary fs-3 fw-900 text-center mb-4">
-                        THÔNG TIN <span class="text-green">KHÁCH HÀNG</span>
-                    </h2>
-                    <div class="form-input row pt-2 pb-2">
-                        
-                    </div>
-                    <div class="d-flex justify-content-center pt-4">
-                        <button type="submit" class="btn-primary">Tra cứu</button>
+                <form class="container search-container">
+                    <h2 class="text-primary fs-3 fw-900 mb-4">THÔNG TIN <span class="text-green">KHÁCH HÀNG</span></h2>
+                    <div class="form-input-group">
+                        <div class="search-option">
+                            <div class="select-menu">
+                                <div class="select-btn">
+                                    <span class="sBtn-text">Tên tổ chức</span>
+                                    <i class="fa-solid fa-angle-down ms-2"></i>
+                                </div>
+
+                                <ul class="options">
+                                    <li class="option" data-value="dich-vu">
+                                        <span class="option-text">Tên tổ chức</span>
+                                    </li>
+                                    <li class="option" data-value="dich-vu">
+                                        <span class="option-text">Số giấy</span>
+                                    </li>
+                                    <li class="option" data-value="tin-tuc">
+                                        <span class="option-text">Lĩnh vực</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="text" name="search" placeholder="Tìm kiếm khách hàng ..." />
+                        <button type="submit" class="btn-primary">TRA CỨU</button>
                     </div>
                 </form>
             </section>
@@ -548,14 +564,43 @@
         <script src="./assets/js/nav-bar.js"></script>
 
         <script>
-            const backToTopButton = document.querySelector('.back-to-top');
+            $(document).ready(function () {
+                // button
+                const backToTopButton = document.querySelector('.back-to-top');
 
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 200) {
-                    backToTopButton.style.display = 'flex';
-                } else {
-                    backToTopButton.style.display = 'none';
-                }
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 200) {
+                        backToTopButton.style.display = 'flex';
+                    } else {
+                        backToTopButton.style.display = 'none';
+                    }
+                });
+
+                // select
+                const selectMenu = document.querySelector('.select-menu');
+                const selectBtn = selectMenu.querySelector('.select-btn');
+                const options = selectMenu.querySelectorAll('.option');
+                const sBtnText = selectMenu.querySelector('.sBtn-text');
+
+                // selectMenu.addEventListener('mouseover', () => {
+                //     selectMenu.classList.add('active');
+                // });
+
+                // selectMenu.addEventListener('mouseout', () => {
+                //     selectMenu.classList.remove('active');
+                // });
+
+                selectBtn.addEventListener('click', () => {
+                    selectMenu.classList.toggle('active');
+                });
+
+                options.forEach((option) => {
+                    option.addEventListener('click', () => {
+                        let selectedOption = option.querySelector('.option-text').innerText;
+                        sBtnText.innerText = selectedOption;
+                        selectMenu.classList.remove('active');
+                    });
+                });
             });
         </script>
     </body>
