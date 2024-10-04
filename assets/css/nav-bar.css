@@ -54,14 +54,17 @@
     animation: slideUp 0.5s ease forwards; 
     flex-direction: column;
     align-items: center;
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x:hidden;
 }
 
-.nav-item-sub::after {
+.nav-item::before {
     content: '';
     position: absolute;
-    top: -10px;
+    bottom: -10px;
     left: 0;
-    width: 280px;
+    width: 100%;
     height: 20px;
 }
 
