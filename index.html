@@ -34,7 +34,7 @@
             <section class="top-bar">
                 <div class="container h-100 d-flex justify-content-between align-items-center bg-white">
                     <a href="#" class="top-bar-logo d-flex justify-content-between align-items-center gap-3">
-                        <img src="./assets/image/logo-quacert.svg" alt="" />
+                        <img loading="lazy" src="./assets/image/logo-quacert.svg" alt="" />
                         <div class="top-bar-logo-info">
                             <h3 class="text-primary fs-5 fw-bold mb-0">TRUNG TÂM CHỨNG NHẬN PHÙ HỢP</h3>
                             <p class="text-green fs-6 fw-medium mb-0">VIETNAM CERTIFICATION CENTRE</p>
@@ -43,15 +43,16 @@
 
                     <div class="top-bar-icon d-flex justify-content-between align-items-center gap-3">
                         <a href="#" class="top-bar-icon-item bg-green rounded-circle fs-5 c-pointer">
-                            <img src="./assets/image/log-out.png" alt="" />
+                            <img loading="lazy" src="./assets/image/log-out.png" alt="" />
                         </a>
                         <a href="#" class="top-bar-icon-item bg-green rounded-circle fs-5 c-pointer">
-                            <img src="./assets/image/user.png" alt="" />
+                            <img loading="lazy" src="./assets/image/user.png" alt="" />
                         </a>
                         <a href="#" class="top-bar-icon-item bg-green rounded-circle fs-5 c-pointer">
-                            <img src="./assets/image/email.png" alt="" />
+                            <img loading="lazy" src="./assets/image/email.png" alt="" />
                         </a>
                         <img
+                            loading="lazy"
                             class="top-bar-icon-item rounded-circle ms-2 c-pointer"
                             src="./assets/image/american_logo.png"
                             alt=""
@@ -62,7 +63,7 @@
 
             <section class="nav-bar bg-primary">
                 <div class="container h-100 d-flex justify-content-between align-items-center">
-                    <ul class="nav-bar-list d-flex align-items-center gap-6 fs-7 h-100 fw-medium">
+                    <ul class="nav-bar-list d-flex align-items-center gap-6 h-100 fw-medium">
                         <li class="nav-item">
                             <a href="#" class="nav-link text-white">TRANG CHỦ</a>
                         </li>
@@ -71,6 +72,10 @@
                                 >GIỚI THIỆU QUACERT<i class="fa-solid fa-angle-down ms-2"></i
                             ></a>
                             <ul class="nav-item-sub">
+                                <li><a href="#">Chỉ đạo điều hành</a></li>
+                                <hr />
+                                <li><a href="#">Công khai ngân sách</a></li>
+                                <hr />
                                 <li><a href="#">Cơ cấu tổ chức</a></li>
                                 <hr />
                                 <li><a href="#">Giới thiệu chung</a></li>
@@ -148,44 +153,53 @@
 
             <section class="slider-section">
                 <div class="slider-container h-100 position-relative">
-                    <div class="slider h-100">
-                        <div class="slide">
-                            <div class="slide-item style-main">
-                                <img src="./assets/image/slide-01.svg" alt="" />
-                            </div>
-                        </div>
+                    <div class="slider h-100" id="slider" data-mouse-down-at="0" data-prev-percentage="0">
                         <div class="slide">
                             <div class="slide-item style-1">
                                 <div class="slide-item-info">
-                                    <h2>
-                                        Lễ Công bố Quyết định thành lập Trung tâm Chứng nhận Halal quốc gia – HALCERT
-                                    </h2>
+                                    <h2>Chuyển đổi số</h2>
                                     <p>
-                                        Ngày 24-4-2024, tại Hà Nội, Trung tâm Chứng nhận Phù hợp (QUACERT) tổ chức lễ
-                                        công bố thành lập Trung tâm Chứng nhận Halal quốc gia – HALCERT.
+                                        Chúng tôi cung cấp các giải pháp chuyển đổi số toàn diện, từ cải tiến quy trình
+                                        đến tích hợp công nghệ, giúp doanh nghiệp thích ứng và phát triển bền vững trong
+                                        môi trường số hóa.
                                     </p>
                                     <button class="slide-item-btn btn-green">XEM CHI TIẾT</button>
                                 </div>
                                 <div class="slide-item-img">
-                                    <img src="./assets/image/slide-style1-border.png" class="slide-item-img-mask" />
-                                    <img src="./assets/image/HALAL.jpg" alt="" class="slide-item-img-main" />
+                                    <img
+                                        loading="lazy"
+                                        src="./assets/image/slide-style1-border.png"
+                                        class="slide-item-img-mask"
+                                    />
+                                    <img
+                                        loading="lazy"
+                                        src="https://media.vietq.vn/files/HanHien/2022/11/25/chuyen%20doi%20so%20doanh%20nghiep.jpg"
+                                        alt=""
+                                        class="slide-item-img-main"
+                                    />
                                 </div>
                             </div>
                         </div>
                         <div class="slide">
                             <div class="slide-item style-2">
                                 <div class="slide-item-info">
-                                    <h2>Tiêu chuẩn hệ thống quản lý bổ sung yêu cầu liên quan đến biến đổi khí hậu</h2>
+                                    <h2>Chứng nhận Halal</h2>
                                     <p>
-                                        Ở Việt Nam, các doanh nghiệp sử dụng từ 3.000 tấn CO2 tương đương một năm phải
-                                        thực hiện kiểm kê khí nhà kính theo yêu cầu của Nghị định 06/2022/NĐ-CP
+                                        HALCERT là tổ chức duy nhất cung cấp chứng nhận Halal trực thuộc STAMEQ, Bộ Khoa
+                                        học và Công nghệ, đảm bảo tính pháp lý và uy tín. Thêm vào đó, HALCERT có quan
+                                        hệ chặt chẽ với các tổ chức quốc tế, giúp doanh nghiệp dễ dàng vươn ra toàn cầu.
                                     </p>
                                     <button class="slide-item-btn btn-green">XEM CHI TIẾT</button>
                                 </div>
                                 <div class="slide-item-img">
-                                    <img src="./assets/image/bg-img-slide-style2.png" class="slide-item-img-bg" />
                                     <img
-                                        src="./assets/image/tieuchuankhinhakinh.jpg"
+                                        loading="lazy"
+                                        src="./assets/image/bg-img-slide-style2.png"
+                                        class="slide-item-img-bg"
+                                    />
+                                    <img
+                                        loading="lazy"
+                                        src="./assets/image/services/2.1 HALAL 1.jpg"
                                         alt=""
                                         class="slide-item-img-main"
                                     />
@@ -195,18 +209,68 @@
                         <div class="slide">
                             <div class="slide-item style-3">
                                 <div class="slide-item-info">
-                                    <h2>
-                                        Giới thiệu hoạt động thẩm tra/thẩm định các tuyên bố khí nhà kính của Trung tâm
-                                        Chứng nhận Phù hợp (QUACERT)
-                                    </h2>
+                                    <h2>ISO 14064 và Quản lý khí nhà kính</h2>
                                     <p>
-                                        Thẩm tra xác nhận/Thẩm định Báo cáo KNK của đơn vị theo ISO 14064-1:2018, của dự
-                                        án theo ISO 14064-2:2018 và theo yêu cầu của Nghị định 06/2022/NĐ-CP
+                                        Các chuyên gia đánh giá của QUACERT sẽ không chỉ cung cấp các cuộc đánh giá của
+                                        bên thứ ba độc lập mà còn giúp tổ chức xác định được các cơ hội để cải tiến các
+                                        quá trình và hiệu quả kinh doanh của công ty.
                                     </p>
                                     <button class="slide-item-btn btn-green">XEM CHI TIẾT</button>
                                 </div>
                                 <div class="w-50 h-100 position-relative">
-                                    <img src="./assets/image/Kiemkekhinhakinh.png" alt="" />
+                                    <img loading="lazy" src="./assets/image/Kiemkekhinhakinh.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-item style-1">
+                                <div class="slide-item-info">
+                                    <h2>Chứng nhận sản phẩm</h2>
+                                    <p>
+                                        Chương trình chứng nhận sản phẩm của QUACERT là một chương trình được thực hiện
+                                        theo chuẩn mực quốc tế với phương pháp, thủ tục rõ ràng, sẽ là một sự đảm bảo
+                                        tin cậy cho người tiêu dùng về chất lượng và sự an toàn của sản phẩm.
+                                    </p>
+                                    <button class="slide-item-btn btn-green">XEM CHI TIẾT</button>
+                                </div>
+                                <div class="slide-item-img">
+                                    <img
+                                        loading="lazy"
+                                        src="./assets/image/slide-style1-border.png"
+                                        class="slide-item-img-mask"
+                                    />
+                                    <img
+                                        loading="lazy"
+                                        src="./assets/image/services/4.2 Chứng nhận sản phẩm.jpeg"
+                                        alt=""
+                                        class="slide-item-img-main"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-item style-1">
+                                <div class="slide-item-info">
+                                    <h2>Chứng nhận hệ thống</h2>
+                                    <p>
+                                        Việc chứng nhận hệ thống giúp nâng cao uy tín và niềm tin của khách hàng, tăng
+                                        cường hiệu quả và năng suất sản xuất, cải thiện quy trình quản lý chất lượng,
+                                        tăng khả năng cạnh tranh trên thị trường và thu hút được nhiều khách hàng hơn.
+                                    </p>
+                                    <button class="slide-item-btn btn-green">XEM CHI TIẾT</button>
+                                </div>
+                                <div class="slide-item-img">
+                                    <img
+                                        loading="lazy"
+                                        src="./assets/image/slide-style1-border.png"
+                                        class="slide-item-img-mask"
+                                    />
+                                    <img
+                                        loading="lazy"
+                                        src="./assets/image/services/3.2 Chứng nhận hệ thống.jpg"
+                                        alt=""
+                                        class="slide-item-img-main"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -222,135 +286,153 @@
                     </h2>
 
                     <div class="service-slider-container">
-                        <div class="service-slider">
-                            <div class="service-slide">
-                                <div class="service-slide-item bg-white row">
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/VietGAP.jpg" alt="" />
-                                            <p>VietGAP</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/chungnhanhopchuan.jpg" alt="" />
-                                            <p>Chứng nhận sản phẩm hợp chuẩn</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/nongnghiephuuco.jpg" alt="" />
-                                            <p>Nông nghiệp hữu cơ</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/Tham tra khí nhà kính.jpg" alt="" />
-                                            <p>Thẩm tra khí nhà kính</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/giamdinh.jpg" alt="" />
-                                            <p>Giám định</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/thunghiem.jpg" alt="" />
-                                            <p>Thử nghiệm Cơ Lý - Hóa Sinh - Pin</p>
-                                        </a>
-                                    </div>
+                        <div class="service-slide active">
+                            <div class="service-slide-item bg-white row">
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/VietGAP.jpg" alt="" />
+                                        <p>VietGAP</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/services/chungnhanhopchuan.jpg"
+                                            alt=""
+                                        />
+                                        <p>Chứng nhận sản phẩm hợp chuẩn</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/nongnghiephuuco.jpg" alt="" />
+                                        <p>Nông nghiệp hữu cơ</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/services/Tham tra khí nhà kính.jpg"
+                                            alt=""
+                                        />
+                                        <p>Thẩm tra khí nhà kính</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/giamdinh.jpg" alt="" />
+                                        <p>Giám định</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/thunghiem.jpg" alt="" />
+                                        <p>Thử nghiệm Cơ Lý - Hóa Sinh - Pin</p>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="service-slide">
-                                <div class="service-slide-item row">
-                                    <div class="col-4">
-                                        <a href="" class="service-item bg-white">
-                                            <img src="./assets/image/services/Thuc an chan nuôi.jpg" alt="" />
-                                            <p>Thức ăn chăn nuôi</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="" class="service-item bg-white">
-                                            <img src="./assets/image/services/chungnhanhethong.jpg" alt="" />
-                                            <p>Chứng nhận hệ thống quản lý</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/5S.jpg" alt="" />
-                                            <p>5S</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/truy xuat nguon goc.png" alt="" />
-                                            <p>Truy xuất nguồn gốc</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/chungnhanhopquy.jpg" alt="" />
-                                            <p>Chứng nhận sản phẩm hợp quy</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/daotao.jpg" alt="" />
-                                            <p>Đào tạo</p>
-                                        </a>
-                                    </div>
+                        </div>
+                        <div class="service-slide">
+                            <div class="service-slide-item row">
+                                <div class="col-4">
+                                    <a href="" class="service-item bg-white">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/services/Thuc an chan nuôi.jpg"
+                                            alt=""
+                                        />
+                                        <p>Thức ăn chăn nuôi</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/chungnhanhethong.jpg" alt="" />
+                                        <p>Chứng nhận hệ thống quản lý</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/5S.jpg" alt="" />
+                                        <p>5S</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/services/truy xuat nguon goc.png"
+                                            alt=""
+                                        />
+                                        <p>Truy xuất nguồn gốc</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/chungnhanhopquy.jpg" alt="" />
+                                        <p>Chứng nhận sản phẩm hợp quy</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/daotao.jpg" alt="" />
+                                        <p>Đào tạo</p>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="service-slide">
-                                <div class="service-slide-item row">
-                                    <div class="col-4">
-                                        <a href="" class="service-item bg-white">
-                                            <img src="./assets/image/services/chungnhanhethong.jpg" alt="" />
-                                            <p>Chứng nhận hệ thống quản lý</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/chungnhanhopchuan.jpg" alt="" />
-                                            <p>Chứng nhận sản phẩm hợp chuẩn</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/chungnhanhopquy.jpg" alt="" />
-                                            <p>Chứng nhận sản phẩm hợp quy</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/nongnghiephuuco.jpg" alt="" />
-                                            <p>Nông nghiệp hữu cơ</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/VietGAP.jpg" alt="" />
-                                            <p>VietGAP</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="#" class="service-item bg-white">
-                                            <img src="./assets/image/services/thunghiem.jpg" alt="" />
-                                            <p>Thử nghiệm Cơ Lý - Hóa Sinh - Pin</p>
-                                        </a>
-                                    </div>
+                        </div>
+                        <div class="service-slide">
+                            <div class="service-slide-item row">
+                                <div class="col-4">
+                                    <a href="" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/chungnhanhethong.jpg" alt="" />
+                                        <p>Chứng nhận hệ thống quản lý</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img
+                                            loading="lazy"
+                                            src="./assets/image/services/chungnhanhopchuan.jpg"
+                                            alt=""
+                                        />
+                                        <p>Chứng nhận sản phẩm hợp chuẩn</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/chungnhanhopquy.jpg" alt="" />
+                                        <p>Chứng nhận sản phẩm hợp quy</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/nongnghiephuuco.jpg" alt="" />
+                                        <p>Nông nghiệp hữu cơ</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/VietGAP.jpg" alt="" />
+                                        <p>VietGAP</p>
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="service-item bg-white">
+                                        <img loading="lazy" src="./assets/image/services/thunghiem.jpg" alt="" />
+                                        <p>Thử nghiệm Cơ Lý - Hóa Sinh - Pin</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="service-slide-control">
-                        <button onclick="prevSlide()">
-                            <img src="./assets/image/arrow-left.svg" alt="" />
+                        <button id="prev-btn">
+                            <img loading="lazy" src="./assets/image/arrow-left.svg" alt="" />
                         </button>
-                        <button onclick="nextSlide()">
-                            <img src="./assets/image/arrow-right.svg" alt="" />
+                        <button id="next-btn">
+                            <img loading="lazy" src="./assets/image/arrow-right.svg" alt="" />
                         </button>
                     </div>
                 </div>
@@ -420,7 +502,7 @@
                     </div>
                     <div class="news-main">
                         <a href="#" class="news-main-left">
-                            <img src="./assets/image/news-img-1.png" alt="" />
+                            <img loading="lazy" src="./assets/image/news-img-1.png" alt="" />
                             <div class="news-main-left-info">
                                 <h6>
                                     Ban hành danh mục lĩnh vực, cơ sở phát thải khí nhà kính phải thực hiện kiểm kê khí
@@ -437,14 +519,14 @@
                         </a>
                         <div class="news-main-right">
                             <a href="#" class="news-main-right-item">
-                                <img src="./assets/image/news-img-2.png" alt="" />
+                                <img loading="lazy" src="./assets/image/news-img-2.png" alt="" />
                                 <p>
                                     Áp dụng tiêu chuẩn quốc tế trong kiểm kê khí nhà kính: Doanh nghiệp 'lợi đủ đường'
                                 </p>
                             </a>
                             <hr />
                             <a href="#" class="news-main-right-item">
-                                <img src="./assets/image/news-img-3.png" alt="" />
+                                <img loading="lazy" src="./assets/image/news-img-3.png" alt="" />
                                 <p>
                                     Quacert tiếp đoàn cơ quan năng suất quốc gia nepal tại hà nội: Thúc đẩy hợp tác về
                                     năng suất xanh
@@ -452,7 +534,7 @@
                             </a>
                             <hr />
                             <a href="#" class="news-main-right-item">
-                                <img src="./assets/image/news-img-4.png" alt="" />
+                                <img loading="lazy" src="./assets/image/news-img-4.png" alt="" />
                                 <p>
                                     Chỉ thị của Ban Bí thư về đẩy mạnh công tác tiêu chuẩn, đo lường, chất lượng quốc
                                     gia
@@ -460,7 +542,7 @@
                             </a>
                             <hr />
                             <a href="#" class="news-main-right-item">
-                                <img src="./assets/image/news-img-5.png" alt="" />
+                                <img loading="lazy" src="./assets/image/news-img-5.png" alt="" />
                                 <p>
                                     Chương trình đánh giá chứng nhận lại tiêu chuẩn ISO 9001:2015 tại Tổng công ty bảo
                                     hiểm MIC
@@ -468,7 +550,7 @@
                             </a>
                             <hr />
                             <a href="#" class="news-main-right-item">
-                                <img src="./assets/image/news-img-6.png" alt="" />
+                                <img loading="lazy" src="./assets/image/news-img-6.png" alt="" />
                                 <p>
                                     Khai giảng lớp bồi dưỡng lý luận chính trị dành cho đảng viên mới và bồi dưỡng nhận
                                     thức về Đảng dành cho đối tượng kết nạp Đảng
@@ -487,32 +569,32 @@
                     <div class="row">
                         <div class="col-2">
                             <div class="partner-item">
-                                <img src="./assets/image/partner/LG.png" alt="" />
+                                <img loading="lazy" src="./assets/image/partner/LG.png" alt="" />
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-item">
-                                <img src="./assets/image/partner/MIC.png" alt="" />
+                                <img loading="lazy" src="./assets/image/partner/MIC.png" alt="" />
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-item">
-                                <img src="./assets/image/partner/XM Song Gianh.png" alt="" />
+                                <img loading="lazy" src="./assets/image/partner/XM Song Gianh.png" alt="" />
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-item">
-                                <img src="./assets/image/partner/YAMAHA_MOTORS.png" alt="" />
+                                <img loading="lazy" src="./assets/image/partner/YAMAHA_MOTORS.png" alt="" />
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-item">
-                                <img src="./assets/image/partner/Vietinbank.png" alt="" />
+                                <img loading="lazy" src="./assets/image/partner/Vietinbank.png" alt="" />
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-item">
-                                <img src="./assets/image/partner/VISSAI.jpg" alt="" />
+                                <img loading="lazy" src="./assets/image/partner/VISSAI.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -552,23 +634,18 @@
                         </div>
                         <div class="col-xl-3 col-lg-4">
                             <div class="footer-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6467749923777!2d105.80008297508142!3d21.046814880607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab22d55b6b17%3A0xed55eea7ad716c4!2zOCBIb8OgbmcgUXXhu5FjIFZp4buHdCwgTmdoxKlhIMSQw7QsIEJhIMSQw6xuaCwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1727944533439!5m2!1svi!2s"
-                                    width="600"
-                                    height="450"
-                                    style="border: 0"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                ></iframe>
+                                <img loading="lazy" src="./assets/image/footer_img.png" alt="" />
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-3">
                             <div class="footer-social">
                                 <p>Số lượt truy cập: 927742</p>
                                 <div class="footer-social-icon">
-                                    <a href="#" class="me-3"><img src="./assets/image/facebook-svg.svg" alt="" /></a>
-                                    <a href="#"><img src="./assets/image/youtube-svg.svg" alt="" /></a>
+                                    <a class="footer-social-icon-main" href="#"
+                                        ><img loading="lazy" src="./assets/image/JAS-ANZ2.svg" alt=""
+                                    /></a>
+                                    <a href="#"><img loading="lazy" src="./assets/image/facebook-svg.svg" alt="" /></a>
+                                    <a href="#"><img loading="lazy" src="./assets/image/youtube-svg.svg" alt="" /></a>
                                 </div>
                             </div>
                         </div>
@@ -577,11 +654,11 @@
             </footer>
 
             <a href="#" class="back-to-top">
-                <img src="./assets/image/arrow-top.svg" alt="" />
+                <img loading="lazy" src="./assets/image/arrow-top.svg" alt="" />
             </a>
 
             <a href="#" class="btn-message">
-                <img src="./assets/image/message.svg" alt="" />
+                <img loading="lazy" src="./assets/image/message.svg" alt="" />
             </a>
         </div>
 
@@ -613,14 +690,6 @@
                 const selectBtn = selectMenu.querySelector('.select-btn');
                 const options = selectMenu.querySelectorAll('.option');
                 const sBtnText = selectMenu.querySelector('.sBtn-text');
-
-                // selectMenu.addEventListener('mouseover', () => {
-                //     selectMenu.classList.add('active');
-                // });
-
-                // selectMenu.addEventListener('mouseout', () => {
-                //     selectMenu.classList.remove('active');
-                // });
 
                 selectBtn.addEventListener('click', () => {
                     selectMenu.classList.toggle('active');

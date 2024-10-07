@@ -72,6 +72,11 @@
     display: flex;
 }
 
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .nav-item-sub li {
     width: 100%;
 }
@@ -131,6 +136,4 @@
     right: -11px; 
 }
 
-.search-container:hover .search-icon {
-    opacity: 0.5;
-}
+

@@ -1,28 +1,27 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.service-slide');
+let currentSlideService = 0;
+const slidesService = document.querySelectorAll('.service-slide');
 
 function updateSlidePosition() {
-    const slider = document.querySelector('.service-slider');
-    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slidesService.forEach((slide, index) => {
+        slide.classList.remove('active');
+        if (index === currentSlideService) {
+            slide.classList.add('active');
+        }
+    });
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
+    currentSlideService = (currentSlideService + 1) % slidesService.length;
     updateSlidePosition();
 }
 
 function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    currentSlideService = (currentSlideService - 1 + slidesService.length) % slidesService.length;
     updateSlidePosition();
 }
 
-document.getElementById('search-icon').addEventListener('mouseover', function () {
-    const svg = document.getElementById('search-svg').querySelector('path');
-    svg.setAttribute('fill', '#333333');
-    $('.search-input').focus();
-});
+document.getElementById('next-btn').addEventListener('click', nextSlide);
+document.getElementById('prev-btn').addEventListener('click', prevSlide);
 
-document.getElementById('search-icon').addEventListener('mouseout', function () {
-    const svg = document.getElementById('search-svg').querySelector('path');
-    svg.setAttribute('fill', 'white');
-});
+
+updateSlidePosition();

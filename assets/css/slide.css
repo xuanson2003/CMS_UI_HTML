@@ -14,10 +14,15 @@
 .slider {
     display: flex;
     transition: transform 0.5s ease;
+    cursor: grab;
+    user-select: none;
+}
+.slider.active {
+    cursor: grabbing;
 }
 
 .slide {
-    min-width: 100%;
+    min-width: 100vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -68,6 +73,9 @@
     font-size: 18px;
     color: #757f95;
 }
+.slide-item img {
+    pointer-events: none;
+}
 
 /* style main */
 .slide-item.style-main img {
@@ -78,7 +86,7 @@
 
 /* style 1 */
 .slide-item.style-1 {
-    background: url('../image/background-slide-light-blue2.png') no-repeat;
+    background: url('../image/background-slide-light-blue.webp') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -86,7 +94,7 @@
     background-color: transparent;
     box-shadow: none;
     width: 65%;
-    padding-right: 40px;
+    padding-right: 80px;
 }
 
 .slide-item.style-1 .slide-item-img {
@@ -98,12 +106,12 @@
 .slide-item.style-1 .slide-item-img-main {
     position: absolute;
     left: 22px;
-    top: -14px;
+    top: -15px;
     width: 100%;
     height: 413px;
     object-fit: cover;
     z-index: 3;
-    border-radius:400px 0 0 400px;
+    border-radius: 400px 0 0 400px;
 }
 
 .slide-item.style-1 .slide-item-img-mask {
@@ -118,7 +126,7 @@
 
 /* style 2 */
 .slide-item.style-2 {
-    background: url('../image/background-slide-light-green.png') no-repeat;
+    background: url('https://image.shutterstock.com/image-vector/abstract-geometric-background-gradient-soft-260nw-2515033481.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -154,7 +162,6 @@
     mix-blend-mode: darken;
     z-index: 1;
 }
-
 
 /* style 3 */
 .slide-item .slide-item img {
