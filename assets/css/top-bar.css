@@ -1,5 +1,47 @@
 .top-bar {
+}
+
+/* top bar actions */
+.top-bar-actions {
+}
+.top-bar-actions .container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 38px;
+}
+
+.top-bar-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.top-bar-icon-item {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-bar-icon-item svg {
+    width: 15px;
+    height: 15px;
+}
+.top-bar-icon-item svg path {
+    fill: var(--color-primary);
+}
+.top-bar-icon-item:hover svg path {
+    fill: var(--color-secondary);
+}
+
+/* top bar info */
+.top-bar-info {
     height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .top-bar-logo img {
@@ -7,11 +49,42 @@
     width: 68px;
 }
 
-.top-bar-icon-item {
-    width: 44px;
-    height: 44px;
+.top-bar-slogan {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    gap: 20px;
+} 
+.top-bar-slogan-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 16px;
+    transition: .3s ease;
+}
+.top-bar-slogan-item svg {
+    width: 28px;
+    height: 28px;
+}
+.top-bar-slogan-item svg path {
+    fill: var(--color-secondary) !important;
+}
+.top-bar-slogan-item svg polygon {
+    fill: var(--color-text-light) !important;
+}
+.slogan-item-info {
+    text-align: left;
+    font-size: 14px;
+    color: var(--color-primary);
+    font-weight: 300;
+    text-wrap: nowrap;
+}
+.top-bar-slogan-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.top-bar-slogan-item:hover {
+    box-shadow: inset 7px 0 7px -9px #193963; 
 }
 
