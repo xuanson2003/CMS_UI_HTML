@@ -104,7 +104,7 @@ $(document).ready(function () {
             currentIndex = (currentIndex + 1) % slides.length;
             setPositionByIndex();
             updateDots(); // Cập nhật dấu chấm khi chuyển slide
-        }, 15000);
+        }, 20000);
     };
 
     // Đặt lại thời gian chuyển slide tự động

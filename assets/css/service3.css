@@ -1,3 +1,10 @@
+.service .container {
+    margin-top: -171px;
+    background: #fff;
+    z-index: 10;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 .service-slider-container {
     position: relative;
     width: 100%;

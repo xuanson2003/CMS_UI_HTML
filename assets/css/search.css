@@ -5,6 +5,7 @@
     background-position: center;
     padding: 60px 0;
     position: relative;
+    background-attachment: fixed;
 }
 .search::after {
     content: '';

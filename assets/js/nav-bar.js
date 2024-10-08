@@ -18,4 +18,16 @@ $(document).ready(function () {
     document.getElementById('search-icon').addEventListener('mouseout', function () {
         const svg = document.getElementById('search-svg').querySelector('path');
     });
+
+    $('.nav-item').hover(function() {
+        $("<style>")
+            .prop("type", "text/css")
+            .html(".nav-item:hover::after { width: 100%; }")
+            .appendTo("head");
+    }, function() {
+        $("<style>")
+            .prop("type", "text/css")
+            .html(".nav-item::after { width: 0%; }")
+            .appendTo("head");
+    });
 });
