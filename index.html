@@ -440,7 +440,7 @@
 
             <section class="search">
                 <form class="container search-container">
-                    <h2 class="text-primary fs-3 fw-900 mb-4">THÔNG TIN <span class="text-green">KHÁCH HÀNG</span></h2>
+                    <h2 class="text-white fs-3 fw-900 mb-4">THÔNG TIN <span class="text-green">KHÁCH HÀNG</span></h2>
                     <div class="form-input-group">
                         <div class="search-option">
                             <div class="select-menu">
@@ -701,6 +701,11 @@
                         sBtnText.innerText = selectedOption;
                         selectMenu.classList.remove('active');
                     });
+                });
+                document.addEventListener('click', (e) => {
+                    if (!selectMenu.contains(e.target) && selectMenu.classList.contains('active')) {
+                        selectMenu.classList.remove('active');
+                    }
                 });
             });
         </script>

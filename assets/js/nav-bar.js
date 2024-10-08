@@ -12,12 +12,10 @@ $(document).ready(function () {
 
     document.getElementById('search-icon').addEventListener('mouseover', function () {
         const svg = document.getElementById('search-svg').querySelector('path');
-        svg.setAttribute('fill', '#333333');
         document.querySelector('.search-input').focus();
     });
 
     document.getElementById('search-icon').addEventListener('mouseout', function () {
         const svg = document.getElementById('search-svg').querySelector('path');
-        svg.setAttribute('fill', 'white');
     });
 });

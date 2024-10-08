@@ -105,7 +105,7 @@
 
 .slide-item.style-1 .slide-item-img-main {
     position: absolute;
-    left: 22px;
+    left: 9px;
     top: -15px;
     width: 100%;
     height: 413px;
@@ -117,7 +117,7 @@
 .slide-item.style-1 .slide-item-img-mask {
     position: absolute;
     top: -16px;
-    left: -80px;
+    left: -93px;
     height: 105%;
     z-index: 2;
     pointer-events: none;
@@ -126,7 +126,7 @@
 
 /* style 2 */
 .slide-item.style-2 {
-    background: url('https://image.shutterstock.com/image-vector/abstract-geometric-background-gradient-soft-260nw-2515033481.jpg') no-repeat;
+    background: url('https://www.shutterstock.com/image-vector/abstract-geometric-background-gradient-soft-600nw-2487829491.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
