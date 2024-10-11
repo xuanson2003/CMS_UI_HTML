@@ -1,0 +1,120 @@
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding-top: 32px;
+}
+.footer-info h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+
+.footer-info-title {
+    padding-right: 26px;
+}
+.footer-info-title img {
+    margin-bottom: 12px;
+}
+.footer-info-title p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.footer-social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 12px;
+}
+.footer-social-links a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.footer-social-links .footer-social-icon-main {
+    height: 50px;
+    width: 50px;
+}
+.footer-social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.footer-info-contact,
+.footer-quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer-info-contact h6,
+.footer-quick-links h6 {
+    margin-bottom: 14px;
+}
+
+.footer-info-contact p {
+    display: flex;
+    align-items: start;
+    gap: 12px
+}
+.footer-info-contact i {
+    font-size: 16px;
+    line-height: 28px;
+} 
+.footer-info-contact a {
+    color: #fff;
+}
+.footer-info-contact a:hover{
+    text-decoration: underline;
+    opacity: .6;
+}
+
+
+.footer-quick-links a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer-info-visit-number img {
+    width: auto;
+    height: auto;
+}
+.footer-quick-links a:hover {
+    color: var(--color-secondary)
+}
+
+/* credits */
+.footer hr {
+    margin: 24px 0 16px;
+    text-align: center;
+}
+.footer-credits {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-bottom: 16px;
+    font-size: 14px;
+    opacity: .8;
+    text-align: center;
+}
+
+@media (max-width: 769px) {
+    .footer-info-contact h6,
+    .footer-quick-links h6,
+    .footer-info-visit-number h6 {
+        margin-top: 24px !important;
+        margin-bottom: 4px !important;
+    }
+    .footer-info-visit-number h6 {
+        margin-bottom: 16px !important;
+    }
+}
+
+
+
+
