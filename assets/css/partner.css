@@ -1,5 +1,3 @@
-.partner {
-}
 .partner-container {
     padding-top: 24px;
     padding-bottom: 40px;
@@ -33,4 +31,18 @@
 .partner-item:hover {
     transform: translateY(-6px);
     box-shadow: 0px 19px 10px -16px rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 992px) {
+    .partner-content {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .partner-content::-webkit-scrollbar {
+        display: none;
+    }
+    .partner-content-box-row {
+        width: 960px;
+    }
 }

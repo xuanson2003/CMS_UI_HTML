@@ -33,6 +33,7 @@
     border: 1px solid var(--color-text-light);
     background-color: var(--color-white);
     width: 760px;
+    max-width: 100%;
     height: 52px;
     border-radius: 100px;
     margin-top: 8px;
@@ -64,7 +65,7 @@
 /* select */
 .search-option {
     height: 100%;
-    width: 146px;
+    min-width: 146px;
     background-color: var(--color-background);
     border-radius: 100px;
     background-color: #eff1f3;
@@ -146,4 +147,22 @@
     font-size: 15px;
     font-weight: 500;
     color: #333;
+}
+
+@media (max-width: 992px) {
+    .search-option {
+        min-width: 100px;
+    }
+    .select-btn .sBtn-text {
+        height: auto;
+        min-height: 1.4375em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;  
+    }
+    .form-input-group input {
+        font-size: 14px; 
+        padding: 0 10px; 
+        min-width: 100px;
+    }
 }

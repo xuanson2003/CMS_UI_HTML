@@ -7,6 +7,8 @@
     --color-black: #000000;
     --color-text: #123663;
     --color-text-light: #e6edf4;
+
+    --nav-bar-height: 56px;
 }
 
 * {
@@ -138,6 +140,14 @@ button {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
     }
 }
 
